@@ -11,11 +11,15 @@
         <h2>Alarm at:  <span id="alarmSet"></span></h2>
         <button onclick="stopAlarm()" id="stopBtn">Stop Alarm</button>
         <form action="">
-            <input type="number" placeholder="Hours" id="hours">
-            <input type="number" placeholder="Minutes" id="minutes">
+            <select id="hour-select">
+                <option value="Hour" selected hidden id="hours">Hour</option>
+            </select>
+            <select id="minute-select">
+                <option value="Minutes" selected hidden id="minutes">Minutes</option>
+            </select>
             <select id="am_pm">
-                <option value="AM">AM</option>
-                <option value="PM">PM</option>
+                <option value="A.M.">AM</option>
+                <option value="P.M.">PM</option>
             </select>
         </form>
         <button onclick ="setAlarm()" class="setBtn">Set Alarm</button>
